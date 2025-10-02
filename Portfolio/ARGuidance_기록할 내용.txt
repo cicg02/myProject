@@ -4,10 +4,10 @@
            () 실제와 같이 장비 성능 테스트, 출장없이 장비 점검 및 트러블슈팅가이드
     () os 3개 지원 : Window, android, ios
     () SSM(장비 모니터링)---> TSG(고장 조치)---> PFT(성능시험) ,,, MV
-          SSM : 장비와 모바일 디바이스 간 원격 통신으로 실시간 장비 상태 모니터링
-          TSG : 장비 고장 발생 시, 3D AR로 관련 고장 부위 표시 및 조치 방법 안내
-          PFT : 3D AR 기반 장비 성능 시험 AR 가이드 및 측정 툴 제공
-          MV : 3D로 장비의 구조를 살펴보는 컨텐츠
+          SSM(Sensor Signal Monitoring) : 장비와 모바일 디바이스 간 원격 통신으로 실시간 장비 상태 모니터링
+          TSG(Trouble Shooting Guide) : 장비 고장 발생 시, 3D AR로 관련 고장 부위 표시 및 조치 방법 안내
+          PFT(Performance Test) : 3D AR 기반 장비 성능 시험 AR 가이드 및 측정 툴 제공
+          MV(Model Viewer) : 3D로 장비의 구조를 살펴보는 컨텐츠
 () 회로도
 () 버전 업데이트
 () 튜토리얼
