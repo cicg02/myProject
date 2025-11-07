@@ -13,7 +13,7 @@
 	    </style>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         </script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
@@ -34,8 +34,10 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">home</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contents">목차</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">프로젝트 소개</a></li>
-                    <!-- 브라질 전시회 메일 첨부하기 -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skill_camera1">카메라 연출 - 일반샷</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#scene_login">로그인</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#scene_choiceContent">컨텐츠 및 모델 선택</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#scene_content">컨텐츠 주요 기능</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#scene_transformMode">Transform Mode</a></li>
                 </ul>
             </div>
         </nav>
@@ -59,7 +61,7 @@
                     		HP : 010-2766-8879
                     		<br/>
                     		Email :
-                    		<a href="mailto:cicg0205@naver.com" class="">cicg0205@naver.com</a>
+                    		<a href="mailto:cicg02@gamil.com" class="">cicg02@gamil.com</a>
                     	</p>
                     </div>                    
                 </div>
@@ -72,15 +74,11 @@
                     <h2 class="mb-3">목차</h2>
                     <ul class="fa-ul mb-0">
                         <li><span class="fa-li"><i class="fas fa-check"></i></span>프로젝트 소개</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>기능 1 - 카메라 연출</li>
-                        
-                        <br>
-                        <br>
-                        
-                        <li class="jb-red">
-                            <span class="fa-li"><i>&#8251;</i></span>
-                            2023년 하반기부터 유지 보수한 프로젝트이며, 간단한 프로젝트 설명, 제가 개발한 부분, 주로 사용한 테크닉 위주로 기술하겠습니다.
-                        </li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>로그인</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>컨텐츠 및 모델 선택</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>컨텐츠 주요 기능</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Transform Mode</li>                        
+                        <br><br>                                               
                     </ul>
                 </div>
             </section>
@@ -136,32 +134,164 @@
             <hr class="m-0" />
                         
             
-            <!-- skill_camera1  --> 
-            <section class="resume-section" id="skill_camera1">
+            <!-- Login  --> 
+            <section class="resume-section" id="scene_login">
                 <div class="resume-section-content">
-                    <h2 class="mb-2">카메라 연출</h2>
-                    <p class="mb-3">기본 카메라 연출 (Cinemachine Camera Version.2.6.0)</p>
+                    <h2 class="mb-2">로그인</h2>
+                    <p class="mb-2"" >
+                        이 화면은 로그인 화면입니다.                
+                    </p>
+                    <p class="mb-2">
+                        -UnityWebRequest 활용한 HTTP 통신으로 계정 정보를 확인(AR Guidance와 같은 API 호출)
+                        <br>
+                    </p>
                     
                     <table>
                     	<tr>
-	                    	<td><video style="max-width:100%; height:auto;" src="../resource/video/CinemachineCamera/BasicRounding.mp4"  width="640" height="480" loading="lazy" controls>  </video></td>
-	                    	<td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
-	                    	<td><video style="max-width:100%; height:auto;" src="../resource/video/CinemachineCamera/BasicTraining.mp4"  width="640" height="480" loading="lazy" controls>  </video></td>
-                    	</tr>
-                    	<tr weith=10em height=16em></tr>
-                    	<tr>                    	
-                    		<td><p style="font-size:1.4em; color:#120900; font-weight: bold ;" align="center">라운딩 모드 일반 샷</p></td>
-                    		<td></td>
-                    		<td><p style="font-size:1.4em; color:#120900; font-weight: bold ;" align="center">트레이닝 모드 일반 샷</p></td>
-                    	</tr>          
+                            <td>
+                                <img src="../resource/image/MRGuidance/Login.png" alt="" style="width:100%; height:50vh;"  loading="lazy" />
+                                <p align="center">&lt;로그인 화면&gt;</p>
+                            </td>
+                            <td><p>&nbsp;&nbsp;&nbsp;&nbsp;</td>                                                            
+                        </tr>    
                     </table>
                                                                       
                 </div>
             </section>
             <hr class="m-0" />
             
+            <!-- Choice content  --> 
+            <section class="resume-section" id="scene_choiceContent">
+                <div class="resume-section-content">
+                    <h2 class="mb-2">컨텐츠 및 모델 선택</h2>
+                    <p class="mb-2"" >
+                        이 화면에서 빛나는 중장비 모델 중 하나를 잡아 위쪽의 두 컨텐츠 구역 중 하나에 넣으면, 해당 컨텐츠로 이동하면서 다음 씬으로 전환됩니다.                
+                    </p>
+                    <p class="mb-2">
+                        -OVRGrabber/Grabbable 활용
+                        <br>
+                    </p>
+                    
+                    <table>
+                    	<tr>
+                            <td>
+	                    	    <video 
+                                    src="../resource/video/MRGuidance/CotentChoice.mp4" 
+                                    style="width:100%; height:50vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </video>                              
+                                <p align="center">&lt;컨텐츠 및 모델 선택&gt;</p>
+                            </td>
+                            <td><p>&nbsp;&nbsp;&nbsp;&nbsp;</td>                                                            
+                        </tr>    
+                    </table>
+                                                                      
+                </div>
+            </section>
+            <hr class="m-0" />
             
-            
+            <!-- Content  --> 
+            <section class="resume-section" id="scene_content">
+                <div class="resume-section-content">
+                    <h2 class="mb-2">컨텐츠 주요 기능</h2>
+                    <p class="mb-2"" >
+                        이 화면에서는 컨텐츠 주요 기능인 부품 관련 제어, 모델 정보 표시, 컨텐츠 선택화면으로 전환, 튜토리얼               
+                    </p>
+                    <p class="mb-2">
+                        -U
+                        <br><br>
+                    </p>
+                    
+                    <table>
+                    	<tr>
+                            <td>
+	                    	    <video 
+                                    src="../resource/video/MRGuidance/Content_compShow.mp4" 
+                                    style="width:48vh; height:36vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </video>                              
+                                <p align="center">&lt;부품 관련 제어 &gt;</p>
+                            </td>
+                            <td>
+	                    	    <video 
+                                    src="../resource/video/MRGuidance/Content_info.mp4" 
+                                    style="width:48vh; height:36vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </video>                              
+                                <p align="center">&lt;기종 정보 확인&gt;</p>
+                            </td>
+                            <td><p>&nbsp;&nbsp;&nbsp;&nbsp;</td>                                                            
+                        </tr>
+                        <tr>
+                            <td>
+	                    	    <video 
+                                    src="../resource/video/MRGuidance/Content_home.mp4" 
+                                    style="width:48vh; height:36vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </video>                              
+                                <p align="center">&lt;홈(컨텐츠 선택화면)으로 이동&gt;</p>
+                            </td>
+                            <td>
+	                    	    <img 
+                                    src="../resource/image/MRGuidance/Tutorial.png" 
+                                    style="width:48vh; height:36vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </img>                              
+                                <p align="center">&lt;튜토리얼&gt;</p>
+                            </td>
+                            <td><p>&nbsp;&nbsp;&nbsp;&nbsp;</p></td>                                                            
+                        </tr>                            
+                    </table>
+                                                                      
+                </div>
+            </section>
+            <hr class="m-0" />
+
+            <!-- Transform Mode  --> 
+            <section class="resume-section" id="scene_transformMode">
+                <div class="resume-section-content">
+                    <h2 class="mb-2">Transform Mode</h2>
+                    <p class="mb-2">
+                        이                
+                    </p>
+                    <p class="mb-2">
+                        -U
+                        <br><br>
+                    </p>
+                    
+                    <table>
+                    	<tr>
+                            <td>
+	                    	    <video 
+                                    src="../resource/video/MRGuidance/TransformMode_2.mp4" 
+                                    style="width:48vh; height:36vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </video>                              
+                                <p align="center">&lt;Move, Rotate, Scale&gt;</p>
+                            </td>
+                            <td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>                              
+                            <td>
+	                    	    <video 
+                                    src="../resource/video/MRGuidance/TransformMode_Reset.mp4" 
+                                    style="width:48vh; height:36vh; display:block;" 
+                                    loading="lazy" 
+                                    controls>
+                                </video>                              
+                                <p align="center">&lt;Reset&gt;</p>
+                            </td>
+                            <td><p>&nbsp;&nbsp;&nbsp;&nbsp;</td>                                                            
+                        </tr>                          
+                    </table>
+                                                                      
+                </div>
+            </section>
+            <hr class="m-0" />
             
             
             <!-- Thank you -->
