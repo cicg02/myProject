@@ -25,15 +25,18 @@
         <script>
             const isLocal = location.protocol === "file:" || location.hostname === "localhost";
 
-            document.querySelectorAll("video[data-src]").forEach(video => {
-                const localPath = video.getAttribute("data-src");
+            document.querySelectorAll("video").forEach(video => {
+                // 우선 data-src 있으면 그걸 우선 사용
+                const basePath = video.getAttribute("data-src") || video.getAttribute("src");
+
+                if (!basePath) return; // 둘 다 없으면 패스
 
                 if (isLocal) {
-                video.src = localPath;
+                    video.src = basePath;
                 } else {
-                const pageDir = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
-                const remotePath = `${pageDir}${localPath.replace("..", "")}`;
-                video.src = remotePath;
+                    const pageDir = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
+                    const remotePath = `${pageDir}${basePath.replace("..", "")}`;
+                    video.src = remotePath;
                 }
             });
         </script>
@@ -184,6 +187,7 @@
                     	<tr>
                             <td>
 
+                                1
                                  <!-- TestLog -->
                                 <video data-src="../resource/video/MRGuidance/CotentChoice.mp4"
                                     width="640" height="480" 
