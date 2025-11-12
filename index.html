@@ -11,7 +11,17 @@
 			// set var value 
 		   	document.getElementById("test").innerHTML = test;
 		} 
+
+		// video -> local, remote
+		const repoName = "myProject";
+		const isLocal = location.hostname === "localhost" || location.protocol === "file:";		
+		document.querySelectorAll("video[data-src]").forEach(video => {
+			const localPath = video.getAttribute("data-src");
+			const remotePath = "/" + repoName + localPath.replace("..", "");
+			video.src = isLocal ? localPath : remotePath;
+		});
 	</script>
+
 	<body style='display:inline-block;text-align:center'>	
 		<h1 align="left">https://cicg02.github.io/myProject/Portfolio/ARGuidance.html</h1>	
 		<h1 align="left">https://cicg02.github.io/myProject/Portfolio/MRGuidance.html</h1>		
@@ -19,7 +29,14 @@
 		<h1 align="left">https://cicg02.github.io/myProject/Portfolio/GolfStoreManager.html</h1>
 		<h1 align="left">https://cicg02.github.io/myProject/Portfolio/VrMultiscreenController.html</h1>
 		
-		 <!--
+
+		<!-- Test -->
+		<video src="../PortfolioProject/resource/video/ScreenGolfGTS/ClubRealData.mp4"
+      		width="640" height="480" controls
+       		style="max-width:100%; height:auto; transform: translate(0%, 140%);">
+		</video>
+
+		 <!-- Test
 		<h3 style='display:inline-block'>Test</h3>
 		<br>
 		<video  src="/myProject/resource/video/CinemachineCamera/BasicTraining.mp4"  controls> MixView </video>
